@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторська практика від психолога</title>
+  <style>
+    /* Темный фон с градиентом */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #f0f0f0;
+      padding: 20px;
+    }
+
+    /* Панель с улучшенной видимостью */
+    .container {
+      background: rgba(60, 60, 60, 0.95); /* чуть светлее панели */
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      max-width: 450px;
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #f5f5f5; /* светлее для контраста */
+      animation: slideUp 1s ease-out forwards;
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    @keyframes slideUp {
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #e0e0e0; /* более контрастный текст */
+      margin: 15px 0;
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #dddddd;
+      animation: fadeIn 1.4s ease-out forwards;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #c0c0c0;
+    }
+
+    .old-price {
+      font-size: 16px;
+      text-decoration: line-through;
+      color: #888;
+      margin-left: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #f0f0f0;
+      background-color: #4a4a4a; /* светлее нейтральная кнопка */
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      text-decoration: none;
+      animation: fadeIn 1.6s ease-out forwards;
+    }
+
+    .btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      background-color: #5c5c5c;
+    }
+
+    .highlight {
+      color: #e0e0e0;
+      font-weight: bold;
+    }
+
+    /* Адаптивность для планшетов */
+    @media (max-width: 768px) {
+      .container { padding: 35px 25px; }
+      h1 { font-size: 24px; }
+      h2 { font-size: 20px; }
+      .price { font-size: 22px; }
+      .btn { padding: 14px 22px; font-size: 16px; }
+    }
+
+    /* Адаптивность для телефонов */
+    @media (max-width: 480px) {
+      .container { padding: 30px 20px; }
+      h1 { font-size: 20px; }
+      h2 { font-size: 18px; }
+      p { font-size: 14px; }
+      .price { font-size: 20px; }
+      .btn { padding: 12px 20px; font-size: 16px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Авторська практика від психолога-гіпнотерапевта</h1>
+    <p class="highlight">ТЕХНІКА ШВИДКОГО ВІДНОВЛЕННЯ</p>
+    <p>15 хвилин, щоб зняти стрес</p>
+    <p class="price">98 грн <span class="old-price">2198</span></p>
+    <p class="highlight">Ціна однієї кави замість сесії психолога</p>
+    <!-- Пустая ссылка на Telegram бота -->
+    <a href="https://t.me/ваш_бот" class="btn" id="buyButton" target="_blank">Отримати прямо зараз</a>
+  </div>
+
+</body>
+</html>
